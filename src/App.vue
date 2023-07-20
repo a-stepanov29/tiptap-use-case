@@ -22,11 +22,28 @@ export default {
         'type': 'doc',
         'content': [
           {
-            'type': 'paragraph',
+            'type': 'test',
             'content': [
               {
-                'type': 'text',
-                'text': 'fdfdfddfg  dgdfgd gfgf gfdg'
+                'type': 'testItem',
+                'attrs': {
+                  'isSelected': false
+                },
+                'content': [
+                  {
+                    'type': 'paragraph',
+                    'attrs': {
+                      'textAlign': 'left',
+                      'color': null
+                    },
+                    'content': [
+                      {
+                        'type': 'text',
+                        'text': 'Варик'
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -38,6 +55,10 @@ export default {
 </script>
 
 <style lang='scss'>
+html {
+  background: #EBF0FA
+}
+
 .ProseMirror {
   > * + * {
     margin-top: 0.75em;
